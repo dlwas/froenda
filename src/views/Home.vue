@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <section class="home">
+    <!--  -->
+    <p>xd</p>
+    <div>{{ $t("message") }}</div>
+  </section>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+  // import Carousel from 'vue-carousel/src/Carousel.vue'
+  // import Slide from 'vue-carousel/src/Slide.vue'
+  // $i18n.locale = 'pl' // to change
 
-export default {
-  name: 'Home',
-  components: {
-    HelloWorld
+  export default {
+    name: 'Home',
+    components: {}
   }
-}
 </script>
+
+<style lang="scss" scoped>
+  p {}
+</style>
