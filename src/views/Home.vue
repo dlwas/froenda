@@ -1,10 +1,8 @@
 <template>
-  <section class="home">
+  <header class="home">
     <!--  -->
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iste quisquam soluta dolores amet quae dignissimos
-      quaerat voluptas inventore omnis.</p>
-    <div>{{ $t("message") }}</div>
-  </section>
+    header
+  </header>
 </template>
 
 <script>

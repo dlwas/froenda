@@ -1,3 +1,8 @@
 {
-  "message": "hello i18n !!"
+  "navbar":{
+    "projects": "Projects",
+    "tools": "Tools",
+    "about": "About me",
+    "contact": "Contact"
+  }
 }
