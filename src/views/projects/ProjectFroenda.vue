@@ -6,7 +6,7 @@
 
 <script>
     export default {
-        name: 'Project-Froenda'
+        name: 'ProjectFroenda'
     }
 </script>
 

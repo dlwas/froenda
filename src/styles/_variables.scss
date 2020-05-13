@@ -1,18 +1,26 @@
 // Fonts variable
-$font-montserrat: 'Montserrat', sans-serif; // Montserrat:400,500,700
-$font-openSans: 'open sans', sans-serif;
-$font-weight: 400;
-$font-size: 15px;
+$font__montserrat: 'Montserrat', sans-serif; // Montserrat:400,500,700
+$font__monda: 'Monda', sans-serif;
+$font__openSans: 'open sans', sans-serif;
 
-// text colors
-$text-light: #f5f5f5;
-$text-dark: #000000;
-$text-grey: #999;
-$text-second: #3273dc;
+$font__weight__400: 400;
+$font__weight__500: 500;
+$font__weight__700: 700;
 
-// bg colors
-$background-dark: #222222;
-$background-transparent: rgba(0, 0, 0, 0.8);
+$font__size: 15px;
 
-// NAVBAR name styles
-$navbar-height: 3rem;
+// text-s
+$text__primary: #f2f2f2;
+$text__secondary: #333333;
+
+// background-s
+$bg__primary: #17181B;
+$bg__secondary: #232429;
+
+// external
+$color__danger: #FF3860;
+$color__success: #48C774;
+$color__warning: #FFDD57;
+
+// NAVBAR
+$navbar__height: 3rem;
