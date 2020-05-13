@@ -1,29 +1,12 @@
-// mobile / only
-@media (max-width: 576px) {
-    //
-}
+$mobile: "(max-width: 576px)";
+$mobile-tablet: "(min-width: 577px) and (max-width: 769px)";
+$tablet-laptop: "(min-width: 770px) and (max-width: 1024px)";
+$laptop-desktop: "(min-width: 1025px) and (max-width: 1216px)";
+$desktop-widescreen: "(min-width: 1217px) and (max-width: 1408px)";
+$fullhd: "(min-width: 1409px)";
 
-// mobile / tablet
-@media (min-width: 577px) and (max-width: 769px) {
-    //
-}
-
-// tablet / laptop
-@media (min-width: 770px) and (max-width: 1024px) {
-    //
-}
-
-// laptop / desktop
-@media (min-width: 1025px) and (max-width: 1216px) {
-    //
-}
-
-// desktop / widescreen
-@media (min-width: 1217px) and (max-width: 1408px) {
-    //
-}
-
-// fullhd
-@media (min-width: 1409px) {
-    //
-}
+// usage in ex. class
+// @media #{$mobile-tablet},
+// #{$fullhd} {
+//     font-size: 10rem;
+// }

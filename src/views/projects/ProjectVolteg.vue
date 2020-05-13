@@ -1,12 +1,12 @@
 <template>
-    <section>
+    <section class="">
 
     </section>
 </template>
 
 <script>
     export default {
-        name: 'Project'
+        name: 'Project-Volteg'
     }
 </script>
 

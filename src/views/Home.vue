@@ -1,7 +1,8 @@
 <template>
   <section class="home">
     <!--  -->
-    <p>xd</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi iste quisquam soluta dolores amet quae dignissimos
+      quaerat voluptas inventore omnis.</p>
     <div>{{ $t("message") }}</div>
   </section>
 </template>
@@ -18,5 +19,5 @@
 </script>
 
 <style lang="scss" scoped>
-  p {}
+
 </style>

@@ -1,11 +1,12 @@
 <template>
-    <nav class="navbar">
-    </nav>
+    <section class="">
+
+    </section>
 </template>
 
 <script>
     export default {
-        name: 'SectionNavbar'
+        name: 'Project-MyPassion'
     }
 </script>
 
