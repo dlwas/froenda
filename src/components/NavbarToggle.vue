@@ -22,10 +22,10 @@
             },
             handleWindowResize(event) {
                 this.innerWidth = window.innerWidth
-                const dFn = debounce(() => {
+                const debounceFn = debounce(() => {
                     this.setMobileData()
                 }, '400ms')
-                dFn(event)
+                debounceFn(event)
             },
             setMobileData() {
                 if (this.innerWidth <= 769) {

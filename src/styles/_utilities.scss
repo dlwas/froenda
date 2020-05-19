@@ -1,0 +1,21 @@
+@mixin setContainer {
+    padding: 0 6vw;
+}
+
+@mixin setFlexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin resetLinkStyle {
+    color: $text__primary;
+    text-decoration: none;
+}
+
+@mixin setSquare($dimensions) {
+    width: $dimensions;
+    height: $dimensions;
+}
+
+@mixin themeSwitcher () {}

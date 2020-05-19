@@ -27,7 +27,6 @@
                     <div class="theme__item"><span>Light</span></div>
                     <div class="theme__item">
                         <div class="theme__base">
-
                             <div class="theme__dot theme__dot--active" />
                         </div>
                     </div>
