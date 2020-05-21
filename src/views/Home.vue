@@ -1,21 +1,31 @@
 <template>
-  <header class="home">
-    <!--  -->
-    header
-  </header>
+  <div class="home">
+    <SectionHeader />
+    <div class="test">home bird</div>
+  </div>
 </template>
 
 <script>
   // import Carousel from 'vue-carousel/src/Carousel.vue'
   // import Slide from 'vue-carousel/src/Slide.vue'
   // $i18n.locale = 'pl' // to change
+  import SectionHeader from '@/components/SectionHeader'
 
   export default {
     name: 'Home',
-    components: {}
+    components: {
+      SectionHeader
+    }
   }
 </script>
 
 <style lang="scss" scoped>
+  .test {
+    background-color: red;
+  }
 
+  .home {
+    position: relative;
+    width: 100%;
+  }
 </style>
