@@ -37,7 +37,7 @@
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
   }
-  
+
   #app {
     font-size: $font__size;
     color: $text__primary;

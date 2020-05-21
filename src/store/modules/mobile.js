@@ -1,7 +1,7 @@
 export default {
     state: {
         isMobile: true,
-        isHigher: false,
+        isHigher: false, // this.$store.state.mobile.isHigher
         showMobileNavbar: true
     },
     mutations: {

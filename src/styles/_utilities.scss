@@ -1,21 +1,39 @@
 @mixin setContainer {
+    // @include setContainer;
     padding: 0 6vw;
 }
 
 @mixin setFlexCenter {
+    // @include setFlexCenter;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 @mixin resetLinkStyle {
+    // @include resetLinkStyle;
     color: $text__primary;
     text-decoration: none;
 }
 
 @mixin setSquare($dimensions) {
+    // @include setSquare();
     width: $dimensions;
     height: $dimensions;
 }
 
-@mixin themeSwitcher () {}
+@mixin themeSwitcher () {
+    // @include themeSwitcher;
+}
+
+@mixin backgroundSizes () {
+    // @include backgroundSizes;
+    width: 100%;
+    height: 80vh;
+}
+
+@mixin positionTopLeft () {
+    // @include positionTopLeft;
+    top: 0;
+    left: 0;
+}
