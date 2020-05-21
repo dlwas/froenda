@@ -1,42 +1,45 @@
 <template>
-    <nav class="navbar">
-        <div class="navbar__main">
-            <div class="navbar__brand">
-                <a href="/">froenda</a>
+    <!-- navbar--active -->
+    <nav class="navbar" :class="{ 'navbar--active': !this.$store.state.mobile.isMobile }">
+        <div class="navbar__left">
+            <div class="navbar__leftBrand">
+                <div class="navbar__brand">
+                    <a href="/">froenda</a>
+                </div>
+                <div class="navbar__bars">
+                    <NavbarToggle />
+                </div>
             </div>
-            <div class="navbar__bars">
-                <NavbarToggle />
+            <div class="navbar__leftLinks">
+                <div class="navbar__links">
+                    <ul>
+                        <li class="links__item"><a href="#projects">{{ $t(`navbar.projects`) }}</a></li>
+                        <li class="links__item"><a href="#tools">{{ $t(`navbar.tools`) }}</a></li>
+                        <li class="links__item"><a href="#about">{{ $t(`navbar.about`) }}</a></li>
+                        <li class="links__item"><a href="#contact">{{ $t(`navbar.contact`) }}</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="navbar__links" v-show="this.$store.state.mobile.isHigher" :class=" {'navbar__links--active' : this.$store.state.mobile.isHigher} ">
-            <div class="links__menu">
-                <ul class="menu__links">
-                    <li class="menu__item"><a href="#projects">{{ $t(`navbar.projects`) }}</a></li>
-                    <li class="menu__item"><a href="#tools">{{ $t(`navbar.tools`) }}</a></li>
-                    <li class="menu__item"><a href="#about">{{ $t(`navbar.about`) }}</a></li>
-                    <li class="menu__item"><a href="#contact">{{ $t(`navbar.contact`) }}</a></li>
-                </ul>
+        <div class="navbar__right">
+            <div class="right__item social__item">
+                <a href="https:www.instagram.com/_dariuszwasilewski/" rel="noopener" target="_blank">
+                    <img src="@/assets/icons/instagram.svg" alt="_dariuszwasilewski | Instagram">
+                </a>
             </div>
-            <div class="links__external">
-                <div class="external__item">
-                    <a href="https:www.instagram.com/_dariuszwasilewski/" rel="noopener" target="_blank">
-                        <img src="@/assets/icons/instagram.svg" alt="_dariuszwasilewski | Instagram">
-                    </a>
+            <div class="right__item theme__switcher" @click="toggleTheme">
+                <div class="theme__item"><span>Light</span></div>
+                <div class="theme__item">
+                    <div class="theme__base">
+                        <div class="theme__dot theme__dot--active" />
+                    </div>
                 </div>
-                <div class="external__item theme__switcher" @click="toggleTheme">
-                    <div class="theme__item"><span>Light</span></div>
-                    <div class="theme__item">
-                        <div class="theme__base">
-                            <div class="theme__dot theme__dot--active" />
-                        </div>
-                    </div>
-                    <div class="theme__item"><span>Dark</span></div>
+                <div class="theme__item"><span>Dark</span></div>
+            </div>
+            <div class="right__item lang__switcher" @click="toggleLang">
+                <div class="lang__item" :class="{ 'lang__item--active': !this.$store.state.i18n.isEnglish}">Pl
                 </div>
-                <div class="external__item lang__switcher" @click="toggleLang">
-                    <div class="lang__item" :class="{ 'lang__item--active': !this.$store.state.i18n.isEnglish}">Pl
-                    </div>
-                    <div class="lang__item" :class="{ 'lang__item--active': this.$store.state.i18n.isEnglish}">En
-                    </div>
+                <div class="lang__item" :class="{ 'lang__item--active': this.$store.state.i18n.isEnglish}">En
                 </div>
             </div>
         </div>
@@ -63,68 +66,222 @@
 </script>
 
 <style lang="scss" scoped>
+    // active =/= desktop
     .navbar {
+        @include setContainer;
         @include setFlexCenter;
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        height: $navbar__height;
+        height: 90vh;
         background-color: $bg__primary;
+        padding-top: 1.5rem;
 
-        &__main {
-            @include setFlexCenter;
-            @include setContainer;
+        &__left {
             width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__leftBrand {
+            @include setFlexCenter;
+            width: 100%;
+            display: flex;
             justify-content: space-between;
         }
 
         &__brand {
-            font-weight: $font__weight__500;
             text-transform: uppercase;
+            font-weight: $font__weight__500;
+        }
+
+        &__leftLinks {
+            @include setFlexCenter;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+
+        &__links {
+            width: 100%;
+            height: 100%;
+
+            ul {
+                width: 100%;
+                height: 80%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                text-align: center;
+                font-size: 3rem;
+            }
         }
 
         &__bars {}
 
-        &__links {}
 
-        &--active {}
+        &__right {
+            @include setFlexCenter;
+            width: 100%;
+            // height: 100%;
+        }
     }
 
     .links {
 
-        &__menu {}
-
-        &__external {}
-
-        &--active {}
+        &__item {}
     }
 
-    .external {
-
-        &__item {}
-
-        &--active {}
+    .right {
+        &__item {
+            @include setFlexCenter;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding: .5rem;
+            font-size: 1rem;
+        }
     }
 
     .theme {
-
-        &__switcher {}
-
-        &__item {}
-
-        &__base {}
-
-        &__dot {
-
-            &--active {}
+        &__item {
+            @include setFlexCenter;
+            width: 100%;
+            height: 100%;
+            // @include setSquare(2rem);
         }
     }
 
     .lang {
-
         &__item {
+            @include setFlexCenter;
+            width: 100%;
+            height: 100%;
+        }
+    }
 
-            &--active {}
+    .social {
+        &__item {
+            @include setFlexCenter;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    // active == desktop
+    .navbar--active {
+        @include setContainer;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: auto;
+        height: $navbar__height;
+        background-color: $bg__primary;
+        // padding-top: 1.5rem;
+
+        & .navbar__left {
+            width: auto;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
         }
 
-        &__switcher {}
+        & .navbar__leftBrand {
+            width: auto;
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        & .navbar__brand {
+            text-transform: uppercase;
+            font-weight: $font__weight__500;
+        }
+
+        & .navbar__leftLinks {
+            width: auto;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 0rem;
+            margin-left: 2rem;
+        }
+
+        & .navbar__links {
+            width: auto;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+
+            ul {
+                width: auto;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-start;
+                text-align: center;
+                align-items: center;
+                font-size: 1rem;
+            }
+        }
+
+        & .navbar__bars {}
+
+
+        & .navbar__right {
+            @include setFlexCenter;
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    .navbar--active,
+    .links {
+
+        &__item {
+            padding: 0rem 1rem;
+        }
+    }
+
+    .navbar--active,
+    .right {
+        &__item {
+            @include setFlexCenter;
+            width: auto;
+            display: flex;
+            justify-content: flex-start;
+            padding: .5rem;
+            font-size: 1rem;
+        }
+    }
+
+    .navbar--active,
+    .theme {
+        &__item {
+            @include setFlexCenter;
+            width: auto;
+            height: 100%;
+            // @include setSquare(2rem);
+        }
+    }
+
+    .navbar--active,
+    .lang {
+        &__item {
+            @include setFlexCenter;
+            width: auto;
+            height: 100%;
+        }
+    }
+
+    .navbar--active,
+    .social {
+        &__item {
+            @include setFlexCenter;
+            width: auto;
+            height: 100%;
+        }
     }
 </style>
