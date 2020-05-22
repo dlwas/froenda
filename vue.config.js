@@ -9,7 +9,7 @@ module.exports = {
 
   configureWebpack: {},
 
-  publicPath: process.env.NODE_ENV === 'production' ? '/production-sub-path/' : '/',
+  // publicPath: process.env.NODE_ENV === 'production' ? '/production-sub-path/' : '/',
 
   pluginOptions: {
     i18n: {
