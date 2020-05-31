@@ -1,8 +1,46 @@
 {
-  "navbar":{
+  "error": {
+    "default": {
+      "sectionName": "error in translations, check lang file"
+    }
+  },
+  "navbar": {
     "projects": "Projects",
     "tools": "Tools",
     "about": "About me",
     "contact": "Contact"
+  },
+  "header":{
+    "title": "Welcome",
+    "subtitle": "I'm Dariusz",
+    "trade": "Front-end Web Developer",
+    "quote": "Encoding the future with passion and commitment",
+    "btn": "I would like to see projects"
+  },
+  "projects": {
+    "name": "Projects",
+    "links": {
+      "see": "See",
+      "github": "Github",
+      "live": "Live"
+    },
+    "items": {
+      "froenda": {
+        "name": "Froenda",
+        "description": "Portfolio page containing projects with a detailed description of the technologies used, roles, participation in them, as well as visual presentations and code."
+      },
+      "mypassion": {
+        "name": "My passion",
+        "description": "Presentation created using the JavaScript language 'My passion' for the needs of a studio project."
+      },
+      "volteg": {
+        "name": "Volteg",
+        "description": "Music creator portfolio page DJ Volteg."
+      }
+    }
+  },
+  "tools": {
+    "name": "Tools",
+    "items": {}
   }
 }

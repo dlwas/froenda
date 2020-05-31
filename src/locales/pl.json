@@ -1,8 +1,46 @@
 {
-  "navbar":{
+  "error": {
+    "default": {
+      "sectionName": "error in translations, check lang file"
+    }
+  },
+  "navbar": {
     "projects": "Projekty",
     "tools": "Narzędzia",
     "about": "O mnie",
     "contact": "Kontakt"
+  },
+  "header":{
+    "title": "",
+    "subtitle": "",
+    "trade": "",
+    "quote": "",
+    "btn": "I would like to see projects"
+  },
+  "projects": {
+    "name": "Projekty",
+    "links": {
+      "see": "zobacz",
+      "github": "github",
+      "live": "demo"
+    },
+    "items": {
+      "froenda": {
+        "name": "Froenda",
+        "description": "Strona portfolio zawierająca projekty ze szczegółowym opisem wykorzystanych technologi, ról, udziału w nich, jak i prezentacje wizualne oraz kod."
+      },
+      "mypassion": {
+        "name": "Moja pasja",
+        "description": "Prezentacja stworzona za pomocą języka JavaScript „Moja pasja” na potrzeby projektu studyjnego."
+      },
+      "volteg": {
+        "name": "Volteg",
+        "description": "Strona portfolio twórcy muzyki | DJ Volteg."
+      }
+    }
+  },
+  "tools": {
+    "name": "Narzędzia",
+    "items": {}
   }
 }
