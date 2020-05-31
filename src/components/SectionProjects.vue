@@ -114,6 +114,7 @@
 
             h3 {
                 @include setFlexCenter;
+                text-align: center;
                 background-color: rgba($bg__primary, 0.7);
                 width: 100%;
                 font-size: 4rem;
