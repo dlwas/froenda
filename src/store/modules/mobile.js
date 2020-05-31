@@ -1,8 +1,8 @@
 export default {
     state: {
-        isMobile: true,
+        isMobile: false,
         isHigher: false, // this.$store.state.mobile.isHigher
-        showMobileNavbar: true
+        showMobileNavbar: false
     },
     mutations: {
         toggleNavbarMobile(state, commit) {
