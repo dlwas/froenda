@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="contact">
 
     </section>
 </template>
@@ -11,5 +11,5 @@
 </script>
 
 <style lang="scss" scoped>
-
+.contact{}
 </style>
