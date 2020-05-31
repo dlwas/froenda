@@ -78,7 +78,7 @@
             background-position: top;
             background-size: auto;
             background-attachment: fixed;
-            opacity: 10%;
+            opacity: 0.08;
         }
     }
 
