@@ -1,2 +1,1 @@
-# froenda
-## Dariusz Wasilewski | Porfolio site
+# Dariusz Wasilewski | Porfolio site
