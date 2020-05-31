@@ -24,9 +24,7 @@
     import ArticleWrapper from '@/components/ArticleWrapper'
 
     export default {
-        components: {
-            ArticleWrapper
-        }
+        components: {ArticleWrapper}
     }
 </script>
 

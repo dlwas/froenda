@@ -4,13 +4,16 @@
       "sectionName": "error in translations, check lang file"
     }
   },
+  "utilities": {
+    "seemore": "see more"
+  },
   "navbar": {
     "projects": "Projects",
     "tools": "Tools",
     "about": "About me",
     "contact": "Contact"
   },
-  "header":{
+  "header": {
     "title": "Welcome",
     "subtitle": "I'm Dariusz",
     "trade": "Front-end Web Developer",

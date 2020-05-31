@@ -8,9 +8,7 @@
     export default {
         name: 'SectionName',
         props: {
-            name: {
-                type: String
-            }
+            name: String
         }
     }
 </script>

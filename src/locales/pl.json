@@ -4,6 +4,9 @@
       "sectionName": "error in translations, check lang file"
     }
   },
+  "utilities": {
+    "seemore": "zobacz więcej"
+  },
   "navbar": {
     "projects": "Projekty",
     "tools": "Narzędzia",

@@ -7,8 +7,11 @@
 </template>
 
 <script>
+    import SectionName from '@/components/SectionName.vue'
+
     export default {
-        name: 'SectionTools'
+        name: 'SectionTools',
+        components: {SectionName}
     }
 </script>
 
