@@ -1,0 +1,39 @@
+{
+    "show": {
+        "sectionNavbar": {
+            "this": true,
+            "childs": {}
+        },
+        "sectionHeader": {
+            "this": true,
+            "childs": {}
+        },
+        "sectionProjects": {
+            "this": true,
+            "childs": {
+                "seeMore": true,
+                "links": {
+                    "froenda": {
+                        "see": true,
+                        "github": true,
+                        "live": true
+                    },
+                    "mypassion": {
+                        "see": true,
+                        "github": false,
+                        "live": true
+                    },
+                    "volteg": {
+                        "see": true,
+                        "github": true,
+                        "live": false
+                    }
+                }
+            }
+        },
+        "sectionTools": {
+            "this": true,
+            "childs": {}
+        }
+    }
+}

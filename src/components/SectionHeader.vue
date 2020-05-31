@@ -7,25 +7,15 @@
             </div>
             <ArticleWrapper />
             <div class="header__arrows">
-                <img src="@/assets/icons/arrows.svg" alt="arrows icon">
+                <img src="@/assets/icons/arrows.svg" alt="arrows icon" v-scroll-to="'.projects'">
             </div>
         </div>
         <div class="header__temp temp">
-            <p class="temp__title">
-                Welcome
-            </p>
-            <p class="temp__subtitle">
-                I'm Dariusz
-            </p>
-            <p class="temp__trade">
-                Front-end Web Developer
-            </p>
-            <p class="temp__quote">
-                Encoding the future with passion and commitment
-            </p>
-            <button class="temp__btn">
-                I would like to see projects
-            </button>
+            <p class="temp__title"> {{ $t('header.title') }} </p>
+            <p class="temp__subtitle"> {{ $t('header.subtitle') }} </p>
+            <p class="temp__trade">{{ $t('header.trade') }} </p>
+            <p class="temp__quote"> {{ $t('header.quote') }} </p>
+            <button class="temp__btn" v-scroll-to="'.projects'"> {{ $t('header.btn') }} </button>
         </div>
     </div>
 </template>
@@ -61,7 +51,10 @@
         &__arrows {
             @include setFlexCenter;
             margin: 3.5vh 0;
-            cursor: pointer;
+
+            img {
+                cursor: pointer;
+            }
         }
     }
 
@@ -84,21 +77,64 @@
             background-repeat: repeat-x;
             background-position: top;
             background-size: auto;
-            // background-attachment: fixed;
+            background-attachment: fixed;
             opacity: 2%;
         }
     }
 
     .temp {
+        @include setContainer;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
-        &__title {}
+        &__title {
+            font-size: 4rem;
+            font-weight: $font__weight__700;
+            height: 4.5rem;
 
-        &__subtitle {}
+            @media #{$mobile} {
+                font-size: 3rem;
+            }
+        }
 
-        &__trade {}
+        &__subtitle {
+            font-size: 3.75rem;
+            font-weight: $font__weight__500;
+            height: 4.5rem;
 
-        &__quote {}
+            @media #{$mobile} {
+                font-size: 2.75rem;
+            }
+        }
 
-        &__btn {}
+        &__trade {
+            margin-top: 1rem;
+            color: $text__third;
+        }
+
+        &__quote {
+            margin-top: 4rem;
+        }
+
+        &__btn {
+            margin-top: 1rem;
+            border: 1px solid transparent;
+            padding: .5rem 1rem;
+            width: 70%;
+            font-family: $font__monda;
+            background-color: $bg__secondary;
+            color: $text__primary;
+
+            &:hover {
+                border: 1px solid $text__primary;
+                cursor: pointer;
+            }
+
+            @media #{$mobile} {
+                width: 100%;
+            }
+        }
     }
 </style>
