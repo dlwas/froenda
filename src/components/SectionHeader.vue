@@ -79,7 +79,7 @@
             background-size: auto;
             background-attachment: fixed;
             opacity: 8%;
-            
+
         }
     }
 
@@ -113,10 +113,12 @@
         &__trade {
             margin-top: 1rem;
             color: $text__third;
+            font-size: 1rem;
         }
 
         &__quote {
             margin-top: 4rem;
+            font-size: 1rem;
         }
 
         &__btn {
@@ -125,6 +127,7 @@
             padding: .5rem 1rem;
             width: 70%;
             font-family: $font__monda;
+            font-size: 1rem;
             background-color: $bg__secondary;
             color: $text__primary;
 
