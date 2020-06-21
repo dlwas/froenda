@@ -1,15 +1,15 @@
 <template>
   <div class="about">
-
+    about
   </div>
 </template>
 
 <script>
   export default {
-     name: 'About'
+    name: 'About'
   }
 </script>
 
 <style lang="css" scoped>
-.about{}
+  .about {}
 </style>

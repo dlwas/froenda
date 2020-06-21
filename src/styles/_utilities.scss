@@ -3,6 +3,13 @@
     padding: 0 6vw;
 }
 
+@mixin setFixed {
+    // @include setFixed;
+    position: fixed;
+    z-index: 1000;
+}
+
+
 @mixin setFlexCenter {
     // @include setFlexCenter;
     display: flex;

@@ -44,11 +44,12 @@
 <style lang="scss" scoped>
     .projects {
         position: relative;
-        padding-top: 5rem;
 
         &__items {
             display: flex;
             flex-direction: column;
+            // margin: 0rem 2rem;
+            @include setContainer;
         }
 
         &__item {

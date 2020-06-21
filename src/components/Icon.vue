@@ -2,9 +2,15 @@
     <div class="icon">
         <a v-if="linkUrl" :href="linkUrl" class="iccon__link">
             <img :src="getImageUrl" :alt="getImageAlt" :target="imgTarget">
+            <div class="icon__title">
+                {{ title }}
+            </div>
         </a>
         <div v-else class="icon__noLink">
             <img :src="getImageUrl" :alt="getImageAlt" :target="imgTarget">
+            <div class="icon__title">
+                {{ title }}
+            </div>
         </div>
     </div>
 </template>
@@ -38,6 +44,10 @@
             imgTarget: {
                 type: String,
                 default: "_blank"
+            },
+            title: {
+                type: String,
+                default: "ion title"
             }
         }
     }
@@ -49,26 +59,22 @@
         @include setSquare(5rem);
 
         img {
-            width: 100%;
-            height: 100%;
+            @include setSquare(5rem);
         }
 
         &__link {
             @include resetLinkStyle;
-
-            a {
-                img {
-                    color: green;
-                }
-            }
         }
 
-        &__noLink {
-            a {
-                img {
-                    color: green;
-                }
-            }
+        &__noLink {}
+
+        &__title{
+            @include setFlexCenter;
+            margin-top: .5rem;
+            font-size: .75rem;
+            font-weight: $font__weight__400;
+            color: $text__third;
+            text-transform: uppercase;
         }
     }
 </style>

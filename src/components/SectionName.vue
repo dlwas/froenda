@@ -18,6 +18,7 @@
     .section {
         &__name {
             @include setContainer;
+            padding-top: 5rem;
             font-size: 3rem;
             font-family: $font__monda;
             font-weight: $font__weight__700;

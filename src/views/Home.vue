@@ -3,6 +3,8 @@
     <Header />
     <Projects />
     <Tools />
+    <About />
+    <Contact />
   </div>
 </template>
 
@@ -13,6 +15,8 @@
   import Header from '@/components/Header'
   import Projects from '@/components/Projects'
   import Tools from '@/components/Tools'
+  import About from '@/components/About'
+  import Contact from '@/components/Contact'
 
 
   export default {
@@ -20,7 +24,9 @@
     components: {
       Header,
       Projects,
-      Tools
+      Tools,
+      About,
+      Contact
     }
   }
 </script>

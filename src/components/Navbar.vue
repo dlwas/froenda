@@ -43,6 +43,10 @@
         height: $navbar__height;
         background-color: $bg__primary;
 
+        // experimental
+        // @include setFixed;
+        // box-shadow: 0px 2px 8px rgba(102, 102, 102, 0.13);
+
         &__brand {
             @include setFlexCenter;
             height: 100%;

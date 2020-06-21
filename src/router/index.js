@@ -29,17 +29,17 @@ const routes = [{
     path: '/projects/jrb_calculators',
     name: 'Project-JRBcalculators',
     component: () => import( /* webpackChunkName: "projects/jrb_calculators" */ '../views/projects/ProjectJRBcalculators.vue')
-  },
-  {
-    path: '/about',
-    name: 'About',
-    component: () => import( /* webpackChunkName: "about" */ '../views/About.vue')
-  },
-  {
-    path: '/contact',
-    name: 'Contact',
-    component: () => import( /* webpackChunkName: "contact" */ '../views/Contact.vue')
   }
+  // {
+  //   path: '/about',
+  //   name: 'About',
+  //   component: () => import( /* webpackChunkName: "about" */ '../views/About.vue')
+  // },
+  // {
+  //   path: '/contact',
+  //   name: 'Contact',
+  //   component: () => import( /* webpackChunkName: "contact" */ '../views/Contact.vue')
+  // }
 ]
 
 const router = new VueRouter({
