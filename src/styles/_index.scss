@@ -3,3 +3,12 @@
 @import "@/styles/_fonts.scss";
 @import "@/styles/_media.scss";
 @import "@/styles/_variables.scss";
+
+.row {
+    display: flex;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}

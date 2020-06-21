@@ -18,8 +18,17 @@
     .article__wrapper {
         margin-top: -0.2rem;
 
-        &, .rotated {
+        @media #{$mobile} {
+            margin-top: -0.3rem;
+        }
+
+        &,
+        .rotated {
             margin-bottom: -0.1rem;
+
+            @media #{$mobile} {
+                margin-bottom: -0.3rem;
+            }
         }
     }
 
