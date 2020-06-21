@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        <SeeMore url="#seemore" />
+        <SeeMore url="#seemore" name="seemore" />
     </section>
 </template>
 
@@ -44,6 +44,7 @@
 <style lang="scss" scoped>
     .projects {
         position: relative;
+        margin-top: 5rem;
 
         &__items {
             display: flex;

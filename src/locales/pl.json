@@ -5,7 +5,8 @@
     }
   },
   "utilities": {
-    "seemore": "zobacz więcej"
+    "seemore": "zobacz więcej",
+    "sendmessage": "wyślij wiadomość"
   },
   "navbar": {
     "projects": "Projekty",
