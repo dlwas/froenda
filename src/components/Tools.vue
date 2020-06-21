@@ -6,7 +6,7 @@
         <div class="tools__content">
             <div class="column">
                 <h3 class="content__subtitle">
-                     {{ $t("tools.items.main") }}
+                    {{ $t("tools.items.main") }}
                 </h3>
                 <div class="content__icons row">
                     <!-- <Icon imgUrl="tech/xxx" title="xxx" /> -->
@@ -69,7 +69,7 @@
         &__content {
             @include setContainer;
             padding-top: 3rem;
-            padding-bottom: 4rem;
+            padding-bottom: 5rem;
             background-color: $bg__primary;
         }
     }

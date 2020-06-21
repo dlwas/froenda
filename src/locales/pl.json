@@ -49,5 +49,19 @@
       "other": "inne",
       "basic": "również zaznajomiony z (podstawowo)"
     }
+  },
+  "about": {
+    "name": "O mnie",
+    "items": {
+      "texts": [
+        "o mnie nagłówek 1",
+        "o mnie nagłówek 2",
+        "o mnie nagłówek 3"
+      ]
+    }
+  },
+  "contact": {
+    "name": "Contact",
+    "items": {}
   }
 }

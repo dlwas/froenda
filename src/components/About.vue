@@ -1,15 +1,55 @@
 <template>
   <div class="about">
-    about
+    <SectionName name="about" />
+
+    <div class="about__texts">
+      <p>
+        {{ $t("about.items.texts[0]") }}
+      </p>
+      <p>
+        {{ $t("about.items.texts[1]") }}
+      </p>
+      <p>
+        {{ $t("about.items.texts[2]") }}
+      </p>
+    </div>
   </div>
 </template>
 
 <script>
+  import SectionName from '@/components/SectionName.vue'
+
   export default {
-    name: 'About'
+    name: 'About',
+    components: {
+      SectionName
+    }
   }
 </script>
 
-<style lang="css" scoped>
-  .about {}
+<style lang="scss" scoped>
+  .about {
+    color: $text__secondary;
+    margin-top: 7.5rem;
+
+    &__texts {
+      @include setContainer;
+      margin: 0 auto;
+      margin-top: 5rem;
+      width: 65vw;
+
+      @media #{$mobile},
+      #{$mobile-tablet},
+      #{$tablet-laptop} {
+        width: 100%;
+      }
+
+      p {
+        padding-bottom: 2rem;
+        font-size: 1.125rem;
+      }
+    }
+
+
+  }
 </style>

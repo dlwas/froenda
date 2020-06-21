@@ -69,7 +69,6 @@
             }
 
             &--even {
-
                 @media #{$laptop-desktop},
                 #{$desktop-widescreen},
                 #{$fullhd} {

@@ -47,7 +47,7 @@
             },
             title: {
                 type: String,
-                default: "ion title"
+                default: "icon title"
             }
         }
     }
@@ -58,23 +58,29 @@
         @include setFlexCenter;
         @include setSquare(5rem);
 
+        // @include showUnderline(#da5353, -2rem); //da5353 color__primary
+
         img {
             @include setSquare(5rem);
         }
 
         &__link {
             @include resetLinkStyle;
+            position: relative;
         }
 
-        &__noLink {}
+        &__noLink {
+            position: relative;
+        }
 
-        &__title{
+        &__title {
             @include setFlexCenter;
             margin-top: .5rem;
             font-size: .75rem;
             font-weight: $font__weight__400;
             color: $text__third;
             text-transform: uppercase;
+
         }
     }
 </style>

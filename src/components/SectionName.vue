@@ -15,6 +15,7 @@
 </script>
 
 <style lang="scss" scoped>
+
     .section {
         &__name {
             @include setContainer;
@@ -23,7 +24,7 @@
             font-family: $font__monda;
             font-weight: $font__weight__700;
             color: $text__fourth;
-            background-color: white;
+            // background-color: white;
 
             @media #{$mobile},
             #{$mobile-tablet},

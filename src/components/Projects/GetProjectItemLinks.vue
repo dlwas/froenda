@@ -20,8 +20,7 @@
         color: black;
 
         &__item {
-            @include showUnderline($color__primary);
-            position: relative;
+            @include showUnderline($color__primary, -.5rem);
             font-family: $font__monda;
             line-height: 125%;
             font-size: 1rem;

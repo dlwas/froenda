@@ -49,5 +49,19 @@
       "other": "other",
       "basic": "also familiar with (basic)"
     }
+  },
+  "about": {
+    "name": "About me",
+    "items": {
+      "texts": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer velit massa, placerat id urna a, gravida bibendum lorem. Donec facilisis sapien nec metus lobortis pulvinar. Maecenas blandit ",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer velit massa, placerat id urna a, gravida bibendum lorem. Donec facilisis sapien nec metus lobortis pulvinar. Maecenas blandit nunc eget ipsum ultrices, faucibus efficitur erat bland",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer velit massa, placerat id urna a, gravida bibendum lorem. Donec faci"
+      ]
+    }
+  },
+  "contact": {
+    "name": "Contact",
+    "items": {}
   }
 }

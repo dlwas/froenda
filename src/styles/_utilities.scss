@@ -9,7 +9,6 @@
     z-index: 1000;
 }
 
-
 @mixin setFlexCenter {
     // @include setFlexCenter;
     display: flex;
@@ -46,19 +45,22 @@
     background-image: url($url);
 }
 
-@mixin showUnderline ($color) {
-    // @include showUnderline($color);
+@mixin showUnderline ($color, $bottom) {
+    // @include showUnderline($color, $bottom);
+    @include setFlexCenter;
+    position: relative;
     &:before {
         content: "";
         position: absolute;
-        width: 100%;
+        width: 75%;
         height: 2px;
-        bottom: 0;
-        left: 0;
+        bottom: $bottom;
+        left: auto;
+        z-index: 1000;
         background-color: $color;
         visibility: hidden;
         transform: scaleX(0);
-        transition: all 0.2s ease-in-out;
+        transition: all 0.175s ease-in-out;
     }
 
     &:hover:before {

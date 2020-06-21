@@ -27,7 +27,7 @@
             margin-bottom: -0.1rem;
 
             @media #{$mobile} {
-                margin-bottom: -0.1rem;
+                margin-bottom: -0.2rem;
             }
         }
     }
