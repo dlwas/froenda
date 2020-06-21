@@ -30,7 +30,7 @@
 <style lang="scss" scoped>
   .about {
     color: $text__secondary;
-    margin-top: 7.5rem;
+    margin-top: 5rem;
 
     &__texts {
       @include setContainer;
