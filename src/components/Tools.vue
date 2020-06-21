@@ -79,7 +79,7 @@
         background-color: $bg__primary;
 
         &__subtitle {
-            margin-top: 3rem;
+            margin-top: 5rem;
             font-size: 1rem;
             font-weight: $font__weight__400;
         }
