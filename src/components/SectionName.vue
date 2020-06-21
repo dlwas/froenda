@@ -1,5 +1,5 @@
 <template>
-    <h3 class="section__name">
+    <h3 class="section__name" :class="{'section__name--dark': isDark}">
         {{ $t(`${ this.name }.name`) }}
     </h3>
 </template>
@@ -8,10 +8,12 @@
     export default {
         name: 'SectionName',
         props: {
-            name: String
+            name: String,
+            isDark: Boolean
         }
     }
 </script>
+
 <style lang="scss" scoped>
     .section {
         &__name {
@@ -20,11 +22,17 @@
             font-family: $font__monda;
             font-weight: $font__weight__700;
             color: $text__fourth;
+            background-color: white;
 
             @media #{$mobile},
             #{$mobile-tablet},
             #{$tablet-laptop} {
                 text-align: center;
+            }
+
+            &--dark {
+                color: $text__primary;
+                background-color: $bg__primary;
             }
         }
     }

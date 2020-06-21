@@ -23,13 +23,13 @@
 
     import SeeMore from '@/components/SeeMore.vue'
 
-    import GetProjectItemImageAndName from '@/components/SectionProjects/GetProjectItemImageAndName.vue'
-    import GetProjectItemTags from '@/components/SectionProjects/GetProjectItemTags.vue'
-    import GetProjectItemLinks from '@/components/SectionProjects/GetProjectItemLinks.vue'
-    import GetProjectItemDescription from '@/components/SectionProjects/GetProjectItemDescription.vue'
+    import GetProjectItemImageAndName from '@/components/Projects/GetProjectItemImageAndName.vue'
+    import GetProjectItemTags from '@/components/Projects/GetProjectItemTags.vue'
+    import GetProjectItemLinks from '@/components/Projects/GetProjectItemLinks.vue'
+    import GetProjectItemDescription from '@/components/Projects/GetProjectItemDescription.vue'
 
     export default {
-        name: 'SectionProjects',
+        name: 'Projects',
         components: {
             SectionName,
             SeeMore,
@@ -43,19 +43,17 @@
 
 <style lang="scss" scoped>
     .projects {
-        margin-top: 5rem;
-        padding-top: 5rem;
         position: relative;
+        padding-top: 5rem;
 
         &__items {
-            margin-top: 7rem;
             display: flex;
             flex-direction: column;
         }
 
         &__item {
             @include setContainer;
-            margin-top: 20rem;
+            margin-top: 15rem;
             padding-top: 2rem;
             padding-bottom: 2rem;
             display: flex;

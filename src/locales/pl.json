@@ -14,11 +14,11 @@
     "contact": "Kontakt"
   },
   "header":{
-    "title": "",
-    "subtitle": "",
-    "trade": "",
-    "quote": "",
-    "btn": "I would like to see projects"
+    "title": "Witam",
+    "subtitle": "Jestem Dariusz",
+    "trade": "Front-end Web Developer",
+    "quote": "Kodując przyszłość z pasją i z zaangażowaniem",
+    "btn": "Chciałbym zobaczyć projekty"
   },
   "projects": {
     "name": "Projekty",

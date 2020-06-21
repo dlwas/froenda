@@ -1,13 +1,29 @@
 <template>
-    <div class="article__wrapper">
-        <img src="@/assets/section-background-wrapper2.svg" alt="background section wrapper image" width="100%">
+    <div class="article__wrapper" :class="{ 'rotated' : isRotated}">
+        <img src="@/assets/section-background-wrapper.svg" alt="background section wrapper image" width="100%">
     </div>
 
 </template>
 
+<script>
+    export default {
+        name: "ArticleWrapper",
+        props: {
+            isRotated: Boolean
+        }
+    }
+</script>
 
 <style lang="scss" scoped>
     .article__wrapper {
-        margin-bottom: .2rem;
+        margin-top: -0.2rem;
+
+        &, .rotated {
+            margin-bottom: -0.1rem;
+        }
+    }
+
+    .rotated {
+        transform: rotate(180deg);
     }
 </style>

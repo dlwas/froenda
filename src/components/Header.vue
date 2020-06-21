@@ -24,24 +24,25 @@
     import ArticleWrapper from '@/components/ArticleWrapper'
 
     export default {
+        name: "Header",
         components: {ArticleWrapper}
     }
 </script>
 
 <style lang="scss" scoped>
     .header {
-        @include positionTopLeft;
+        @include setPositionTopLeft;
         position: relative;
         width: 100%;
         height: 100vh;
 
         &__background {
-            @include backgroundSizes;
+            @include setBackgroundSizes;
         }
 
         &__temp {
-            @include backgroundSizes;
-            @include positionTopLeft;
+            @include setBackgroundSizes;
+            @include setPositionTopLeft;
             position: absolute;
             padding-top: $navbar__height;
         }

@@ -1,5 +1,5 @@
 <template>
-    <div class="more" v-show="this.$db.root.show.sectionProjects.childs.seeMore">
+    <div class="more">
         <a :href="this.url">
             <p>{{$t('utilities.seemore') }}</p>
         </a>
@@ -18,7 +18,7 @@
 <style lang="scss" scoped>
     .more {
             @include setFlexCenter;
-            margin-top: 10rem;
+            margin-top: 5rem;
             margin-bottom: 5rem;
             color: $text__secondary;
 

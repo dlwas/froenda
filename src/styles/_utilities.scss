@@ -22,17 +22,13 @@
     height: $dimensions;
 }
 
-@mixin themeSwitcher {
-    // @include themeSwitcher;
-}
-
-@mixin backgroundSizes {
-    // @include backgroundSizes;
+@mixin setBackgroundSizes {
+    // @include setBackgroundSizes;
     width: 100%;
     height: 80vh;
 }
 
-@mixin positionTopLeft {
+@mixin setPositionTopLeft {
     // @include positionTopLeft;
     top: 0;
     left: 0;
@@ -44,7 +40,6 @@
 }
 
 @mixin showUnderline ($color) {
-
     // @include showUnderline($color);
     &:before {
         content: "";
