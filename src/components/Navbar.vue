@@ -135,8 +135,8 @@
             justify-content: center;
             position: fixed;
             z-index: 1000;
-            right: .8rem;
             bottom: 2rem;
+            right: 2vw;
             height: 100vh;
         }
 
