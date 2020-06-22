@@ -1,13 +1,10 @@
 <template>
     <div class="icon">
-        <a v-if="linkUrl" :href="linkUrl" class="iccon__link">
-            <img :src="getImageUrl" :alt="getImageAlt" :target="imgTarget">
-            <div class="icon__title">
-                {{ title }}
-            </div>
+        <a v-if="linkUrl" :href="linkUrl" :target="imgTarget" class="icon__link">
+            <img :src="getImageUrl" :alt="getImageAlt">
         </a>
         <div v-else class="icon__noLink">
-            <img :src="getImageUrl" :alt="getImageAlt" :target="imgTarget">
+            <img :src="getImageUrl" :alt="getImageAlt">
             <div class="icon__title">
                 {{ title }}
             </div>
@@ -56,21 +53,23 @@
 <style lang="scss">
     .icon {
         @include setFlexCenter;
-        @include setSquare(5rem);
-
-        // @include showUnderline(#da5353, -2rem); //da5353 color__primary
-
-        img {
-            @include setSquare(5rem);
-        }
 
         &__link {
             @include resetLinkStyle;
-            position: relative;
+
+            img {
+                @include setSquare(1.5rem);
+                cursor: pointer;
+            }
         }
 
         &__noLink {
-            position: relative;
+            @include showUnderline($color__primary, -1.5rem);
+            flex-direction: column;
+
+            img {
+                @include setSquare(5rem);
+            }
         }
 
         &__title {
@@ -80,7 +79,6 @@
             font-weight: $font__weight__400;
             color: $text__third;
             text-transform: uppercase;
-
         }
     }
 </style>

@@ -49,12 +49,16 @@ export default {
 .contact {
     color: $text__secondary;
     margin-top: 5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 
     &__form {
-        @include setContainer;
+        @include setContainer(6vw);
+
+        @media #{$mobile} {
+            @include setContainer(12vw);
+        }
         @include setFlexCenter;
-        margin-top: 5rem;
+        margin-top: 3rem;
         flex-direction: column;
     }
 }
@@ -99,10 +103,9 @@ export default {
 
     &__button {
         @include setFlexCenter;
-        // border: none;
         outline: none;
-        margin-top: 5rem;
-        margin-bottom: 5rem;
+        margin-top: 2.25rem;
+        margin-bottom: 2.25rem;
         padding: .75rem 2.25rem;
         font-family: $font__monda;
         border: 1px solid $text__secondary;

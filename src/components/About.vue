@@ -32,7 +32,14 @@
         color: $text__secondary;
         margin-top: 5rem;
 
+
         &__texts {
+            @include setContainer(6vw);
+
+            @media #{$mobile} {
+                @include setContainer(12vw);
+            }
+
             margin: 0 auto;
             margin-top: 5rem;
             width: 50vw;
@@ -40,7 +47,6 @@
             @media #{$mobile},
             #{$mobile-tablet},
             #{$tablet-laptop} {
-                @include setContainer;
                 width: 100%;
             }
 

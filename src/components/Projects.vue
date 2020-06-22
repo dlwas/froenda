@@ -5,7 +5,7 @@
 
         <div class="projects__items" v-for="(itemProject, name, index) in this.$db.projects" :key="index">
             <div class="projects__item" :class="{ 'projects__item--even': index % 2 === 1}">
-                <GetProjectItemImageAndName :item="itemProject.name"/>
+                <GetProjectItemImageAndName :item="itemProject.name" />
                 <div class="item__information">
                     <GetProjectItemDescription :item="itemProject.name" class="information__technologies" />
                     <GetProjectItemTags :item="itemProject.data.tags" class="information__technologies" />
@@ -50,16 +50,22 @@
             display: flex;
             flex-direction: column;
             // margin: 0rem 2rem;
-            @include setContainer;
+            @include setContainer(6vw);
+
+            @media #{$mobile} {
+                @include setContainer(12vw);
+            }
+
+            // padding: 0 12vw;
+
         }
 
         &__item {
-            @include setContainer;
+            padding: 0 6vw;
             margin-top: 15rem;
             padding-top: 2rem;
             padding-bottom: 2rem;
             display: flex;
-
             background-color: $bg__third;
 
             @media #{$mobile},
@@ -70,6 +76,7 @@
             }
 
             &--even {
+
                 @media #{$laptop-desktop},
                 #{$desktop-widescreen},
                 #{$fullhd} {
@@ -88,9 +95,12 @@
             align-self: center;
             color: $text__fourth;
 
+            font-size: .3rem;
+
             @media #{$laptop-desktop},
             #{$desktop-widescreen},
             #{$fullhd} {
+
                 padding-left: 2rem;
                 padding-right: 2rem;
             }

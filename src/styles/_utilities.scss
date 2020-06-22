@@ -1,6 +1,6 @@
-@mixin setContainer {
-    // @include setContainer;
-    padding: 0 6vw;
+@mixin setContainer ($value) {
+    // @include setContainer(x vw);
+    padding: 0 $value;
 }
 
 @mixin setFixed {
@@ -49,6 +49,7 @@
     // @include showUnderline($color, $bottom);
     @include setFlexCenter;
     position: relative;
+
     &:before {
         content: "";
         position: absolute;

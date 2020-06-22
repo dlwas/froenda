@@ -1,6 +1,6 @@
 <template>
     <div class="seemore">
-        <a :href="this.url">
+        <a :href="this.url" v-show="false">
             <p>{{$t(`utilities.${name}`)}}</p>
         </a>
     </div>

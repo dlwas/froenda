@@ -18,7 +18,7 @@
 
     .section {
         &__name {
-            @include setContainer;
+            @include setContainer(6vw);
             padding-top: 5rem;
             font-size: 3rem;
             font-family: $font__monda;
@@ -30,6 +30,7 @@
             #{$mobile-tablet},
             #{$tablet-laptop} {
                 text-align: center;
+                padding-top: 2rem;
             }
 
             &--dark {

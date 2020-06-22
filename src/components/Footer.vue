@@ -12,7 +12,7 @@
 
 <style lang="scss" scoped>
     .footer {
-        @include setContainer;
+        @include setContainer(6vw);
         color: $text__secondary;
     }
 </style>

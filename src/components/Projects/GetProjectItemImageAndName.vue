@@ -30,6 +30,10 @@
             width: 100%;
             font-size: 4rem;
             font-weight: $font__weight__700;
+
+            @media #{$mobile} {
+                font-size: 3rem;
+            }
         }
 
         @media #{$mobile},

@@ -25,7 +25,9 @@
 
     export default {
         name: "Header",
-        components: {ArticleWrapper}
+        components: {
+            ArticleWrapper
+        }
     }
 </script>
 
@@ -82,7 +84,12 @@
     }
 
     .temp {
-        @include setContainer;
+        @include setContainer(6vw);
+
+        @media #{$mobile} {
+            @include setContainer(12vw);
+        }
+
         width: auto;
         display: flex;
         flex-direction: column;
@@ -120,18 +127,22 @@
         }
 
         &__btn {
+            @include setFlexCenter;
             margin-top: 1rem;
-            border: 1px solid transparent;
-            padding: .5rem 1rem;
+            padding: .75rem 2.25rem;
             width: 70%;
+            outline: none;
+            border: none;
             font-family: $font__monda;
             font-size: 1rem;
-            background-color: $bg__secondary;
+            cursor: pointer;
+
             color: $text__primary;
+            background-color: $bg__secondary;
 
             &:hover {
-                border: 1px solid $text__primary;
-                cursor: pointer;
+                color: $text__secondary;
+                background-color: white;
             }
 
             @media #{$mobile} {

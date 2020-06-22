@@ -9,7 +9,6 @@
                     {{ $t("tools.items.main") }}
                 </h3>
                 <div class="content__icons row">
-                    <!-- <Icon imgUrl="tech/xxx" title="xxx" /> -->
                     <Icon imgUrl="tech/html" title="html" />
                     <Icon imgUrl="tech/css" title="css" />
                     <Icon imgUrl="tech/sass" title="sass" />
@@ -63,11 +62,15 @@
 
 <style lang="scss">
     .tools {
-        @include setContainer;
         color: $text__primary;
 
         &__content {
-            @include setContainer;
+            @include setContainer(6vw);
+
+            @media #{$mobile} {
+                @include setContainer(12vw);
+            }
+
             padding-top: 3rem;
             padding-bottom: 5rem;
             background-color: $bg__primary;
@@ -75,7 +78,6 @@
     }
 
     .content {
-        @include setContainer;
         background-color: $bg__primary;
 
         &__subtitle {
