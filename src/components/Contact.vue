@@ -26,6 +26,7 @@
                 {{$t(`utilities.sendmessage`)}}
             </button>
         </form>
+        <!-- napisz do mnie darek.leszek.wasilewski@gmail.com -->
     </div>
 </template>
 

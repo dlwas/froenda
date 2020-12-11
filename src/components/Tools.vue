@@ -13,7 +13,7 @@
                     <Icon imgUrl="tech/css" title="css" />
                     <Icon imgUrl="tech/sass" title="sass" />
                     <Icon imgUrl="tech/js" title="javascript" />
-                    <Icon imgUrl="tech/vue" title="vue.js" />
+                    <Icon imgUrl="tech/nuxt" title="nuxt" />
                     <Icon imgUrl="tech/figma" title="figma" />
                 </div>
             </div>
@@ -22,14 +22,13 @@
                     {{ $t("tools.items.other") }}
                 </h3>
                 <div class="content__icons row">
+                    <Icon imgUrl="tech/vue" title="vue.js" />
                     <Icon imgUrl="tech/bulma" title="bulma" />
-                    <Icon imgUrl="tech/bootstrap" title="bootstrap" />
                     <Icon imgUrl="tech/gsap" title="gsap" />
                     <Icon imgUrl="tech/fontawesome" title="fontawesome" />
-                    <Icon imgUrl="tech/nuxt" title="nuxt" />
                 </div>
             </div>
-            <div class="column">
+            <!-- <div class="column">
                 <h3 class="content__subtitle">
                     {{ $t("tools.items.basic") }}
                 </h3>
@@ -38,7 +37,7 @@
                     <Icon imgUrl="tech/phpmyadmin" title="phpmyadmin" />
                     <Icon imgUrl="tech/csharp" title="csharp" />
                 </div>
-            </div>
+            </div> -->
         </div>
 
         <ArticleWrapper />
